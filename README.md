@@ -1,2 +1,2 @@
 # openScienceUca_test
-Test Repository for first apprpoach to open science
+Test Repository for first approach to open science
