@@ -16,6 +16,6 @@ data %>% dplyr::count(top.genre) %>% arrange(desc(n))
 
 # Se ha ido reduciendo la duración de las canciones a lo largo del tiempo?
 plot(dur ~ year, data = data)
-reg <- lm(dur ~ year, data = data)
-abline(reg)
-summary(reg)
+#reg <- lm(dur ~ year, data = data)
+#abline(reg)
+#summary(reg)
