@@ -10,16 +10,18 @@ library(dplyr)
 # Cargar los datos
 data <- read.csv("data/top10s.csv")
 
-# Cuáles son los artistas con más hits?
-#data %>% dplyr::count(artist) %>% arrange(desc(n))
+# Artistas con mas hits
 data |> dplyr::count(artist) |> arrange(desc(n))
 
-# Cuál es el estilo con más éxitos?
-#data %>% dplyr::count(top.genre) %>% arrange(desc(n))
+# Estilos con más exitos
 data |> dplyr::count(top.genre) |> arrange(desc(n))
 
 # Se ha ido reduciendo la duración de las canciones a lo largo del tiempo?
+#plot.new()
+
 plot(dur ~ year, data = data)
 reg <- lm(dur ~ year, data = data)
 abline(reg)
 summary(reg)
+
+
