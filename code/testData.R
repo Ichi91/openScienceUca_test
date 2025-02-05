@@ -17,9 +17,9 @@ data |> dplyr::count(artist) |> arrange(desc(n))
 data |> dplyr::count(top.genre) |> arrange(desc(n))
 
 # Se ha ido reduciendo la duración de las canciones a lo largo del tiempo?
-#plot.new()
 
 plot(dur ~ year, data = data)
+title("Trend Song duration")
 reg <- lm(dur ~ year, data = data)
 abline(reg)
 summary(reg)
