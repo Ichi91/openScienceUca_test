@@ -2,7 +2,8 @@
 title: "Ejercicio ejemplo Rmarkdown"
 author:
     - names: "María Hurtado de Mendoza; Anailys Hernández Julián"
-date: "`r Sys.Date()`" 
+date: "`r Sys.Date()`"
+doi: "10.5281/zenodo.14803122"
 output: 
     distill::distill_article:
         highlight: kate
