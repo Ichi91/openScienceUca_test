@@ -1,7 +1,7 @@
 # Ejercicio práctico: Analizar datos de mayores éxitos de Spotify 2010-2019
 # Datos: https://www.kaggle.com/datasets/leonardopena/top-spotify-songs-from-20102019-by-year/
-#install packages
-#install.packages("dplyr")
+install packages
+install.packages("dplyr")
 #install.packages("tidyr")
 # Cargar paquetes
 library(tidyr)
